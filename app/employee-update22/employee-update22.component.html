@@ -1,0 +1,29 @@
+<div class="container">
+    <h5 style="color: blue;"><u>Edit:</u></h5>
+    <h4>Employees</h4>
+    <table border="1" class="table"> 
+        <thead >
+        <tr class="table-dark">
+            <td >Employee Id</td>
+            <td >First Name</td>
+            <td >Last Name</td>
+            <td >Salary</td>
+            <td >DOB</td>
+            <td >Email</td>
+            
+       </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor='let emp of Employees' class="table-hover">
+            <td >{{emp.empid}}</td>
+            <td >{{emp.firstname}}</td>
+            <td >{{emp.lastname}}</td>
+            <td >{{emp.salary}}</td>
+            <td >{{emp.dOB}}</td>
+            <td >{{emp.email}}</td>
+            
+        </tr>
+        </tbody>
+      </table> 
+    </div>
+

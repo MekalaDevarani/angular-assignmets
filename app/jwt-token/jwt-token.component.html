@@ -1,0 +1,21 @@
+<div class="d1">
+    <div class="container">
+      <h1 class="h1">Login</h1>
+    <form [formGroup]="jwt" (ngSubmit)="user(jwt)">
+      <mat-form-field  appearance="outline">
+        <mat-label>Username</mat-label>
+        <input matInput placeholder="Enter Username" formControlName="username">
+      </mat-form-field>
+      <small  class="text-danger" *ngIf="control['username'].touched && control['username'].invalid">Username is required</small><br>
+  
+    <mat-form-field appearance="outline">
+        <mat-label>Password</mat-label>
+        <input type="password" matInput placeholder="Enter Password" formControlName="password">
+      </mat-form-field><small class="text-danger" *ngIf="control['password'].touched && control['password'].invalid">password is required</small><br>
+      <button type="submit" mat-raised-button color="primary" [disabled]="!jwt.valid">Login</button>
+    </form>
+  </div>
+  </div>
+  
+  
+  
